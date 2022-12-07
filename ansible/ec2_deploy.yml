@@ -44,9 +44,9 @@
         update_cache: yes
       become: yes
     - service:
-      name: docker
-      state: started
-      enabled: yes
+        name: docker
+        state: started
+        enabled: yes
       become: yes
     - name: Start Docker on startup
       shell: systemctl enable docker
