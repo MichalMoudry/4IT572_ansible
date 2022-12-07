@@ -57,7 +57,7 @@
     
     - name: Get project files from Git
       git:
-        repo: "https://github.com/MichalMoudry/4IT572_ansible.git"
+        repo: "https://github.com/MichalMoudry/4IT572_docker.git"
         dest: ./app
     - name: Build docker image
       shell: cd app && docker build -t eshop:latest .
