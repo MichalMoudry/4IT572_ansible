@@ -21,7 +21,7 @@
     - name: Add instance to group
       add_host:
         hostname: "{{ item.public_ip }}"
-        groupname: launchpad
+        groupname: launched
       loop: "{{ ec2.instances }}"
     - name: Wait for SSH connection
       delegate_to: "{{ item.public_dns_name }}"
